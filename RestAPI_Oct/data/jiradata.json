@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "project": {
+            "key": "RA"
+        },
+        "summary":"update issue in RA project via RestAssured",
+        "description":"Created by Arun23",
+        "issuetype":{"name": "Bug"}
+    }
+}
