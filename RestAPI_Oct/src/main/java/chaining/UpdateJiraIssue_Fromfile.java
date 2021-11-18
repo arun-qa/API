@@ -13,13 +13,11 @@ public class UpdateJiraIssue_Fromfile extends BaseRequest {
 	@Test
 	public void updatejiraissue() {
 		File inputPayLoadFile = new File("./data/jiradata.json");
-		RequestSpecification inputRequest = RestAssured
-				.given()
-				.contentType("application/json")
+		inputRequest.contentType("application/json")
 				.accept("application/json")
 				.body(inputPayLoadFile);
-				Response create_response = inputRequest.put();
-				create_response.prettyPrint();
+				response = inputRequest.put(issue_id);
+			
 				
 	}
 

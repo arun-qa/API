@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3469" started-at="2021-11-14T16:31:24 IST" finished-at="2021-11-14T16:31:27 IST">
+  <suite name="Suite" duration-ms="8224" started-at="2021-11-15T16:57:10 IST" finished-at="2021-11-15T16:57:18 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3469" started-at="2021-11-14T16:31:24 IST" finished-at="2021-11-14T16:31:27 IST">
+    <test name="Test" duration-ms="8224" started-at="2021-11-15T16:57:10 IST" finished-at="2021-11-15T16:57:18 IST">
       <class name="chaining.CreateJiraIssue_Fromfile">
-        <test-method status="PASS" signature="setAuthandEndpoint()[pri:0, instance:chaining.CreateJiraIssue_Fromfile@3043fe0e]" name="setAuthandEndpoint" is-config="true" duration-ms="252" started-at="2021-11-14T16:31:24 IST" finished-at="2021-11-14T16:31:24 IST">
+        <test-method status="PASS" signature="setAuthandEndpoint()[pri:0, instance:chaining.CreateJiraIssue_Fromfile@2f943d71]" name="setAuthandEndpoint" is-config="true" duration-ms="398" started-at="2021-11-15T16:57:10 IST" finished-at="2021-11-15T16:57:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setAuthandEndpoint -->
-        <test-method status="PASS" signature="createjiraissue()[pri:0, instance:chaining.CreateJiraIssue_Fromfile@3043fe0e]" name="createjiraissue" duration-ms="3192" started-at="2021-11-14T16:31:24 IST" finished-at="2021-11-14T16:31:27 IST">
+        <test-method status="PASS" signature="createjiraissue()[pri:0, instance:chaining.CreateJiraIssue_Fromfile@2f943d71]" name="createjiraissue" duration-ms="3944" started-at="2021-11-15T16:57:10 IST" finished-at="2021-11-15T16:57:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createjiraissue -->
+        <test-method status="PASS" signature="displayresponse()[pri:0, instance:chaining.CreateJiraIssue_Fromfile@2f943d71]" name="displayresponse" is-config="true" duration-ms="22" started-at="2021-11-15T16:57:14 IST" finished-at="2021-11-15T16:57:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayresponse -->
       </class> <!-- chaining.CreateJiraIssue_Fromfile -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="chaining.DeleteIssue">
+        <test-method status="PASS" signature="setAuthandEndpoint()[pri:0, instance:chaining.DeleteIssue@45820e51]" name="setAuthandEndpoint" is-config="true" duration-ms="1" started-at="2021-11-15T16:57:16 IST" finished-at="2021-11-15T16:57:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setAuthandEndpoint -->
+        <test-method status="PASS" signature="deleteissue()[pri:0, instance:chaining.DeleteIssue@45820e51]" name="deleteissue" duration-ms="2015" started-at="2021-11-15T16:57:16 IST" finished-at="2021-11-15T16:57:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteissue -->
+        <test-method status="PASS" signature="displayresponse()[pri:0, instance:chaining.DeleteIssue@45820e51]" name="displayresponse" is-config="true" duration-ms="2" started-at="2021-11-15T16:57:18 IST" finished-at="2021-11-15T16:57:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayresponse -->
+      </class> <!-- chaining.DeleteIssue -->
+      <class name="chaining.UpdateJiraIssue_Fromfile">
+        <test-method status="PASS" signature="setAuthandEndpoint()[pri:0, instance:chaining.UpdateJiraIssue_Fromfile@7113b13f]" name="setAuthandEndpoint" is-config="true" duration-ms="0" started-at="2021-11-15T16:57:14 IST" finished-at="2021-11-15T16:57:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setAuthandEndpoint -->
+        <test-method status="PASS" signature="updatejiraissue()[pri:0, instance:chaining.UpdateJiraIssue_Fromfile@7113b13f]" name="updatejiraissue" duration-ms="1804" started-at="2021-11-15T16:57:14 IST" finished-at="2021-11-15T16:57:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatejiraissue -->
+        <test-method status="PASS" signature="displayresponse()[pri:0, instance:chaining.UpdateJiraIssue_Fromfile@7113b13f]" name="displayresponse" is-config="true" duration-ms="2" started-at="2021-11-15T16:57:16 IST" finished-at="2021-11-15T16:57:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayresponse -->
+      </class> <!-- chaining.UpdateJiraIssue_Fromfile -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

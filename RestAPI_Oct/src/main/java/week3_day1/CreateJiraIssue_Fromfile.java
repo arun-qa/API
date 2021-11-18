@@ -22,6 +22,8 @@ public class CreateJiraIssue_Fromfile {
 				.body(inputPayLoadFile);
 				Response create_response = inputRequest.post();
 				create_response.prettyPrint();
+				String issue_id = create_response.jsonPath().get("id");
+				System.out.println("id is "+issue_id);
 	}
 
 }

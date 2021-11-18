@@ -14,10 +14,11 @@ public class CreateJiraIssue_Fromfile extends BaseRequest {
 	public void createjiraissue() {
 		File inputPayLoadFile = new File("./data/jiradata.json");
 		inputRequest.contentType("application/json")
-				.accept("application/json")
-				.body(inputPayLoadFile);
-				Response create_response = inputRequest.post();
-				create_response.prettyPrint();
+					.accept("application/json")
+					.body(inputPayLoadFile);
+					response = inputRequest.post();
+					issue_id = response.jsonPath().get("id");
+					System.out.println("issue id is "+issue_id);
 	}
 
 }
