@@ -1,53 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8224" started-at="2021-11-15T16:57:10 IST" finished-at="2021-11-15T16:57:18 IST">
+  <suite name="Default suite" duration-ms="5093" started-at="2021-11-23T17:24:08 IST" finished-at="2021-11-23T17:24:13 IST">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukesTest@491cc5c9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="8224" started-at="2021-11-15T16:57:10 IST" finished-at="2021-11-15T16:57:18 IST">
-      <class name="chaining.CreateJiraIssue_Fromfile">
-        <test-method status="PASS" signature="setAuthandEndpoint()[pri:0, instance:chaining.CreateJiraIssue_Fromfile@2f943d71]" name="setAuthandEndpoint" is-config="true" duration-ms="398" started-at="2021-11-15T16:57:10 IST" finished-at="2021-11-15T16:57:10 IST">
+    <test name="Default test" duration-ms="5093" started-at="2021-11-23T17:24:08 IST" finished-at="2021-11-23T17:24:13 IST">
+      <class name="runner.RunCukesTest">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCukesTest@491cc5c9]" name="setUpClass" is-config="true" duration-ms="164" started-at="2021-11-23T17:24:08 IST" finished-at="2021-11-23T17:24:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@26dcd8c0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setAuthandEndpoint -->
-        <test-method status="PASS" signature="createjiraissue()[pri:0, instance:chaining.CreateJiraIssue_Fromfile@2f943d71]" name="createjiraissue" duration-ms="3944" started-at="2021-11-15T16:57:10 IST" finished-at="2021-11-15T16:57:14 IST">
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCukesTest@491cc5c9]" name="runScenario" duration-ms="4893" started-at="2021-11-23T17:24:09 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-23T17:24:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC001 Create CR"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Create CR for service now application]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected status code <201> but was <200>.
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <200>.
+
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+at stepdefn.CreateCRImplementation.validatestatuscode(CreateCRImplementation.java:44)
+at ✽.Validate the Create CR API returns statuscode(file:///C:/Users/agovindarajan/git/repository/RestAPI_Oct/src/test/java/features/CreateCR.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createjiraissue -->
-        <test-method status="PASS" signature="displayresponse()[pri:0, instance:chaining.CreateJiraIssue_Fromfile@2f943d71]" name="displayresponse" is-config="true" duration-ms="22" started-at="2021-11-15T16:57:14 IST" finished-at="2021-11-15T16:57:14 IST">
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCukesTest@491cc5c9]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2021-11-23T17:24:13 IST" finished-at="2021-11-23T17:24:13 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- displayresponse -->
-      </class> <!-- chaining.CreateJiraIssue_Fromfile -->
-      <class name="chaining.DeleteIssue">
-        <test-method status="PASS" signature="setAuthandEndpoint()[pri:0, instance:chaining.DeleteIssue@45820e51]" name="setAuthandEndpoint" is-config="true" duration-ms="1" started-at="2021-11-15T16:57:16 IST" finished-at="2021-11-15T16:57:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setAuthandEndpoint -->
-        <test-method status="PASS" signature="deleteissue()[pri:0, instance:chaining.DeleteIssue@45820e51]" name="deleteissue" duration-ms="2015" started-at="2021-11-15T16:57:16 IST" finished-at="2021-11-15T16:57:18 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteissue -->
-        <test-method status="PASS" signature="displayresponse()[pri:0, instance:chaining.DeleteIssue@45820e51]" name="displayresponse" is-config="true" duration-ms="2" started-at="2021-11-15T16:57:18 IST" finished-at="2021-11-15T16:57:18 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- displayresponse -->
-      </class> <!-- chaining.DeleteIssue -->
-      <class name="chaining.UpdateJiraIssue_Fromfile">
-        <test-method status="PASS" signature="setAuthandEndpoint()[pri:0, instance:chaining.UpdateJiraIssue_Fromfile@7113b13f]" name="setAuthandEndpoint" is-config="true" duration-ms="0" started-at="2021-11-15T16:57:14 IST" finished-at="2021-11-15T16:57:14 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setAuthandEndpoint -->
-        <test-method status="PASS" signature="updatejiraissue()[pri:0, instance:chaining.UpdateJiraIssue_Fromfile@7113b13f]" name="updatejiraissue" duration-ms="1804" started-at="2021-11-15T16:57:14 IST" finished-at="2021-11-15T16:57:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatejiraissue -->
-        <test-method status="PASS" signature="displayresponse()[pri:0, instance:chaining.UpdateJiraIssue_Fromfile@7113b13f]" name="displayresponse" is-config="true" duration-ms="2" started-at="2021-11-15T16:57:16 IST" finished-at="2021-11-15T16:57:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- displayresponse -->
-      </class> <!-- chaining.UpdateJiraIssue_Fromfile -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunCukesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
